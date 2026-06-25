@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Zeyad Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="logo-box">AQU</div>
+        <div>
+            <h1>Ahmed Zeyad Calculator</h1>
+            <p>Week 08 — JavaScript Basics</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="calculator">
+            <h2>Ahmed's JavaScript Calculator</h2>
+
+            <input type="text" id="display" value="0" readonly>
+
+            <div class="buttons">
+                <button class="clear" onclick="clearDisplay()">C</button>
+                <button class="delete" onclick="deleteLast()">⌫</button>
+                <button class="operator" onclick="appendValue('%')">%</button>
+                <button class="operator" onclick="appendValue('/')">÷</button>
+
+                <button onclick="appendValue('7')">7</button>
+                <button onclick="appendValue('8')">8</button>
+                <button onclick="appendValue('9')">9</button>
+                <button class="operator" onclick="appendValue('*')">×</button>
+
+                <button onclick="appendValue('4')">4</button>
+                <button onclick="appendValue('5')">5</button>
+                <button onclick="appendValue('6')">6</button>
+                <button class="operator" onclick="appendValue('-')">−</button>
+
+                <button onclick="appendValue('1')">1</button>
+                <button onclick="appendValue('2')">2</button>
+                <button onclick="appendValue('3')">3</button>
+                <button class="operator" onclick="appendValue('+')">+</button>
+
+                <button class="zero" onclick="appendValue('0')">0</button>
+                <button onclick="appendValue('.')">.</button>
+
+                <button class="equal" onclick="calculateResult()">=</button>
+            </div>
+        </section>
+
+        <section class="shortcuts">
+            <h2>Keyboard Shortcuts</h2>
+            <p>
+                Use <span>0-9</span> for numbers, <span>+ - * /</span> for operators,
+                <span>Enter</span> or <span>=</span> to calculate,
+                <span>Escape</span> to clear, and <span>Backspace</span> to delete.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by Ahmed Zeyad Khalil Harb Abu Hilal — Al-Aqsa University</p>
+    </footer>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
